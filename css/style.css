@@ -991,104 +991,115 @@ ul.sign li a i {
 .team {
      background: #fff;
      padding-top: 80px;
-}
-
-.team .titlepage h2 {
+ }
+ 
+ .team .titlepage h2 {
      color: #010000;
-}
-
-.team .team_Carousel .carousel-caption {
+ }
+ 
+ .team .team_Carousel .carousel-caption {
      position: inherit;
      padding: 0;
-}
-
-.team_box {
+ }
+ 
+ .team_box {
      text-align: center;
-}
-
-.team_img img {
+ }
+ 
+ .team_img {
+     position: relative;
+     display: inline-block; /* Ajusta el ancho del contenedor al tamaño de la imagen */
+ }
+ 
+ .team_img img {
      margin-bottom: 30px;
-     border-radius: 220px;
+     border-radius: 50%; /* Forma circular */
      border: #ddd solid 15px;
-}
-
-ul.social_icont {
-     margin-top: 41%;
+     transition: border-color 0.3s ease, background-color 0.3s ease; /* Transiciones suaves */
+ }
+ 
+ .team_img:hover img {
+     border-color: transparent; /* Elimina el borde al pasar el ratón */
+     background: linear-gradient(to bottom, #a58946, #8e6d39); /* Gradiente como fondo */
+ }
+ 
+ ul.social_icont {
+     margin-top: 3%;
      display: flex;
      align-content: center;
      align-items: center;
      justify-content: center;
-}
-
-ul.social_icont li {
+ }
+ 
+ ul.social_icont li {
      padding: 4px;
      display: flex;
      align-items: center;
      justify-content: center;
-}
-
-ul.social_icont li a {
+ }
+ 
+ ul.social_icont li a {
      color: #060400;
      width: 40px;
      height: 40px;
      background: #fff;
-     float: left;
      text-align: center;
      line-height: 40px;
-     border-radius: 100%;
+     border-radius: 50%; /* Forma circular */
      font-size: 22px;
-}
-
-#ho_bg:hover.team_img img {
-     border: #A08B3D solid 15px;
-     background-color: #ddd;
-}
-
-.ho_socal:hover {
-     opacity: 1;
-}
-
-.ho_socal {
+     transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+ }
+ 
+ ul.social_icont li a:hover {
+     background: linear-gradient(to bottom, #a58946, #8e6d39); /* Gradiente en lugar de color sólido */
+     color: #fff; /* Color del icono al pasar el ratón */
+ }
+ 
+ .ho_socal {
      position: absolute;
-     z-index: 9999;
-     top: 13px;
-     right: 0;
-     bottom: 0;
-     left: 0;
-     transition: .5s ease;
-     background-color: #000000de;
-     border-radius: 381px;
-     width: 242px;
-     margin: 0 auto;
-     height: 247px;
+     top: 38.5%;
+     left: 50%;
+     transform: translate(-50%, -50%); /* Centraliza el círculo */
+     transition: opacity 0.5s ease;
+     background: rgba(0, 0, 0, 0.5); /* Fondo negro transparente */
+     border-radius: 50%; /* Forma circular */
+     width: 230px;
+     height: 230px;
      opacity: 0;
-}
-
-.team_Carousel .carousel-indicators {
+     display: flex;
+     align-items: center;
+     justify-content: center; /* Centra los iconos dentro del círculo */
+ }
+ 
+ .ho_socal:hover {
+     opacity: 1;
+ }
+ 
+ .team_Carousel .carousel-indicators {
      bottom: -30px;
      align-items: center;
-}
-
-.team_Carousel .carousel-indicators .active {
+ }
+ 
+ .team_Carousel .carousel-indicators .active {
      background-color: #fff;
      padding: 5px;
      width: 20px;
      height: 20px;
-     border: #000000 solid 4px;
-}
-
-.team_Carousel .carousel-indicators li {
-     background-color: #A08B3D;
+     border: #183971 solid 4px;
+ }
+ 
+ .team_Carousel .carousel-indicators li {
+     background: linear-gradient(to bottom, #a58946, #8e6d39); /* Gradiente en lugar de color sólido */
      width: 15px;
      height: 15px;
-     border-radius: 20px;
-}
-
-#team .carousel-control-next,
-#team .carousel-control-prev {
+     border-radius: 50%; /* Forma circular */
+ }
+ 
+ #team .carousel-control-next,
+ #team .carousel-control-prev {
      display: none;
-}
-
+ }
+ 
 
 /** end team section **/
 
