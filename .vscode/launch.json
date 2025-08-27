@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type":"msedge",
+            "type": "chrome",
             "request": "launch",
-            "name": "Open about.html",
-            "file": "c:\\Users\\Melissa\\Documents\\AFSEN\\Afsen-Pg\\about.html"
+            "name": "Abrir HTML local",
+            "file": "${workspaceFolder}/index.html"
         }
     ]
 }
